@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Thinkful Tube">
+
+    <!-- Responsive viewport tag, tells small screens that it's responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Normalize.css, a cross-bcontainerser reset file -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/float-grid.css" type="text/css"/>
+    <link rel="stylesheet" href="css/main.css" type="text/css"/>
+
+    <title>A Youtube Search Implementation via Google Youtube Data API</title>
+</head>
+<body>
+<header role="banner">
+    <div class="container">
+        <div class="col-12">
+            <h1>Thinkful Tube</h1>
+        </div>
+    </div>
+</header>
+<main role="main">
+    <div class="container">
+        <form class="search-form col-12">
+            <input type="text" class="search-input-field" placeholder="Type search string...">
+            <button type="submit" class="search-button">
+                <img class="" src="images/magnifying-glass.png" alt="Magnifying Glass Icon">
+            </button>
+        </form>
+    </div>
+    <div id="search-results" class="container"></div>
+</main>
+<!-- Javascript -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
