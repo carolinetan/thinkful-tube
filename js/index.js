@@ -13,7 +13,7 @@ function displayYoutubeApiResults(data) {
                 `<ul class="container">
                  <h2><span class="resultsHeader">Results:</span></h2>
                 ${data.items.map((item) => {
-                     return `<li class="video-thumbnails">${item.snippet.title}<iframe src="https://www.youtube.com/embed/${item.id.videoId}"></iframe></li>`
+                     return `<li class="video-thumbnails"><span>${item.snippet.title}</span><iframe src="https://www.youtube.com/embed/${item.id.videoId}"></iframe></li>`
                  }).join('')}
                  </ul>`;
         console.log(output);
@@ -31,7 +31,7 @@ function getDataFromApi(search_key, callback) {
         q : search_key,
         type : 'video',
         part : 'snippet',
-        maxResults : 4,
+        maxResults : 10,
         order: "viewCount",
         publishedAfter: "2018-01-01T00:00:00Z"
     };

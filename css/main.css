@@ -35,10 +35,11 @@ body {
 
 .search-form {
     display: inline-block;
+    padding-left: 0;
 }
 
 .search-input-field {
-    width: 80%;
+    width: 75%;
     background-color: #292929;
     border: 1px solid #242424;
     border-radius: 4px;
@@ -62,15 +63,20 @@ body {
 }
 
 .video-thumbnails {
-    display: inline-block;
+    display: grid;
+    text-decoration: none;
+    padding: 20px;
 }
 
 ul {
+    text-decoration: none;
+    word-wrap: break-word;
     list-style-type: none;
     padding-left: 0;
 }
 
-li {
+li span{
     color: white;
     font-size: 1em;
 }
+

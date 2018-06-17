@@ -27,17 +27,20 @@
         </div>
     </div>
 </header>
-<main role="main">
     <div class="container">
         <form class="search-form col-12">
-            <input type="text" class="search-input-field" placeholder="Type search string...">
+            <input type="text" class="search-input-field" aria-label="Type search string..." placeholder="Type search string...">
             <button type="submit" class="search-button">
                 <img class="" src="images/magnifying-glass.png" alt="Magnifying Glass Icon">
             </button>
         </form>
     </div>
-    <div id="search-results" class="container"></div>
-</main>
+    <!-- aria-live tells the screen reader to watch this part of the DOM
+        for changes. We add `hidden` so that users won't be confused
+        by the presence of an empty element.-->
+    <main role="main" id="search-results"  aria-live="assertive" hidden>
+        <!--our results will go here!-->
+    </main>
 <!-- Javascript -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
