@@ -1,7 +1,7 @@
 
 
 const YOUTUBE_API_URL = 'https://www.googleapis.com/youtube/v3/search\n';
-const YOUTUBE_API_KEY = 'AIzaSyAcqVMc4b1sniRoJ2y3zK3KVTWRoO30snw';
+const MY_KEY = config.YOUTUBE_API_KEY;
 
 
 function displayYoutubeApiResults(data) {
@@ -26,7 +26,7 @@ function getDataFromApi(search_key, callback) {
     console.log('--> getDataFromApi got called... ');
 
     const api_request = {
-        key : YOUTUBE_API_KEY,
+        key : MY_KEY,
         q : search_key,
         type : 'video',
         part : 'snippet',
