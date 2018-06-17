@@ -6,9 +6,8 @@ const YOUTUBE_API_KEY = 'AIzaSyAcqVMc4b1sniRoJ2y3zK3KVTWRoO30snw';
 
 function displayYoutubeApiResults(data) {
     console.log('--> displayYoutubeApiResults got called... video count=' + data.items.length);
+    $('ul').empty();
     if (data.items.length > 0) {
-        $('ul').empty();
-
         output =
                 `<ul class="container">
                  <h2><span class="resultsHeader">Results:</span></h2>
